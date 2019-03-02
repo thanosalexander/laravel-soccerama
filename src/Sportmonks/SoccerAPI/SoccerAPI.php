@@ -133,8 +133,4 @@ class SoccerAPI
         return new Stage();
     }
 
-    public function positions()
-    {
-        return new Position();
-    }
 }
