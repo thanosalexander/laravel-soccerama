@@ -13,6 +13,7 @@ use Sportmonks\SoccerAPI\Requests\LiveScore;
 use Sportmonks\SoccerAPI\Requests\Markets;
 use Sportmonks\SoccerAPI\Requests\Odds;
 use Sportmonks\SoccerAPI\Requests\Player;
+use Sportmonks\SoccerAPI\Requests\Position;
 use Sportmonks\SoccerAPI\Requests\Round;
 use Sportmonks\SoccerAPI\Requests\Season;
 use Sportmonks\SoccerAPI\Requests\Squad;
@@ -130,5 +131,10 @@ class SoccerAPI
     public function stages()
     {
         return new Stage();
+    }
+
+    public function positions()
+    {
+        return new Position();
     }
 }
