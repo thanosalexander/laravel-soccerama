@@ -3,6 +3,7 @@
 namespace Sportmonks\SoccerAPI;
 
 use Sportmonks\SoccerAPI\Requests\Bookmaker;
+use Sportmonks\SoccerAPI\Requests\Coach;
 use Sportmonks\SoccerAPI\Requests\Commentary;
 use Sportmonks\SoccerAPI\Requests\Continent;
 use Sportmonks\SoccerAPI\Requests\Country;
@@ -133,4 +134,8 @@ class SoccerAPI
         return new Stage();
     }
 
+    public function coach()
+    {
+        return new Coach();
+    }
 }
