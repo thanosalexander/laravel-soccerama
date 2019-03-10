@@ -18,6 +18,6 @@ class League extends SoccerAPIClient {
 
     public function bySeasonId($seasonId)
     {
-        return $this->callData('leagues/season=' . $seasonId);
+        return $this->callData('leagues?season=' . $seasonId);
     }
 }
